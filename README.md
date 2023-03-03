@@ -40,6 +40,30 @@ It's mandantory to set up the development environment and build the app by follo
   - Create local.properties in android directory.
   - yarn install
   - npm run android or npm run ios
+  - If pod command is NOT found ?
+    - Check .ruby_version of project root.
+    - rbenv versions
+    - rbenv global 2.7.5
+    - ruby --version
+  - iOS build
+    - cd ios
+    - pod cache clean -all
+    - rm -rf Podfile.lock
+    - pod install
+    - cd ..
+    - npm run ios
+    - When occurring error Failed to build iOS project. We ran "xcodebuild" command.. ?
+      - Execute command, rm -rf /Users/admin/Library/Developer/Xcode/DerivedData
+      - Execute Xcode
+      - Check if DerivedData directory is made again.
+      - Execute command, npm run ios again.
+    - When occurring this error in Xcode, error build: Command PhaseScriptExecution failed with a nonzero exit code
+      - sudo ln -s "$(which node)" /usr/local/bin/node
+      - CMD + K: Clean Build
+      - CMD + Shift + B : Build
+      - npm run ios
+      - Change package.json's ios setting: // "ios": "react-native run-ios", ==> "ios": "react-native run-ios --device='AidenKooG'",
+      - Please check if mobile phone's developer mode is turned on.
 
 #### Link:
 
