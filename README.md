@@ -2,9 +2,9 @@
 
 #### Summary
 
-This project contains logic related to RTSP video play.
+This project contains logics related to RTSP video play.
 
-- Language: Typescript
+- Language: Typescript, Javascript, Go
 - Library: React (A library for creating user interfaces.)
 
 #### Release Note
@@ -16,8 +16,8 @@ This project contains logic related to RTSP video play.
 
 It's mandantory to set up the development environment and build the app by following the instructions below:
 
-- Web
-    - Local Server Setup
+- **React Web**
+    - Local **Server** Setup
       - git clone https://github.com/deepch/RTSPtoWeb
       - cd RTSPtoWeb
       - Update config.json
@@ -25,7 +25,7 @@ It's mandantory to set up the development environment and build the app by follo
       - Execute server
         - GO111MODULE=on go run \*.go
           - (localhost:8083)
-    - React Client Setup
+    - React **Client** Setup
       - Visit https://ko.reactjs.org/
       - npm create vite@latest
         - react / typescript selection.
@@ -34,7 +34,7 @@ It's mandantory to set up the development environment and build the app by follo
       - yarn install
       - npm start or npm run dev
         - Please refer to your package.json file content.
-- Mobile
+- **RN Mobile**
     - npx react-native init PROJECT_NAME
     - Create local.properties in android directory.
     - yarn install
