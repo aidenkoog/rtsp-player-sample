@@ -1,5 +1,5 @@
 {
-  "name": "rtsp_player_app",
+  "name": "rtsp_player_mobile_rn",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.3",
+    "react-native-orientation": "^3.1.3",
     "react-native-vlc-media-player": "^1.0.48"
   },
   "devDependencies": {
